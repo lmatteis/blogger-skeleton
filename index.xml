@@ -72,7 +72,7 @@
      </b:if>
       </h1>
       <b:if cond='data:post.dateHeader'>
-        <h3 class='date-header'><data:post.dateHeader/></h3>
+        <h3 class='date-header'><a href="http://pseudocodice.com">Luca Matteis</a> / <data:post.dateHeader/></h3>
       </b:if>
     </b:if>
 
