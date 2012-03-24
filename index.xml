@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="http://pseudocodice.com/god.css" type="text/css" />
     <style>
     .navbar { display: none; }
+    .Attribution { display: none; }
     </style>
 </head>
 <body>
@@ -23,6 +24,12 @@
 
     <b:loop values='data:posts' var='post'>
       <b:include data='post' name='post'/>
+      <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+        <b:include data='post' name='comments'/>
+      </b:if>
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <b:include data='post' name='comments'/>
+      </b:if>
     </b:loop>
     <data:adEnd/>
   </div>
