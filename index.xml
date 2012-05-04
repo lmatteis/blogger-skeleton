@@ -12,6 +12,7 @@
     <style>
     .navbar { display: none; }
     .Attribution { display: none; }
+    .Header { display: none; }
     </style>
 </head>
 <body>
